@@ -5,13 +5,11 @@
 function calculomontopresta () {
 	montoprestamo = parseFloat(document.getElementById("montodeprestamo").value);
 	tasainteres = parseFloat(document.getElementById("tasainteres").value);
-	cuotacapital = parseFloat(document.getElementById("cuotacapital").value);
 	plazodepago = parseFloat(document.getElementById("plazopago").value);
 	montotal = 0
 
 	interes = montoprestamo*(tasainteres/100)
-	cuotasemanal = interes+cuotacapital
-	pagototal = cuotasemanal*plazodepago
+	pagototal = (interes*plazodepago)+montoprestamo
 
 	document.getElementById ("resultado").value = pagototal 
 

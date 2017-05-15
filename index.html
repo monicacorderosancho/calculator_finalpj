@@ -2,32 +2,95 @@
 
 <html>
     
+    <!--  Buenas pràcticas. OJO QUE FALTAN CAMPOS POR RELLENAR -->  
     <head>
-     
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--  título y byline -->
+
+        <title class="titulo">¿Cuánto resiste su bolsillo?</title>
+        <meta name="author" content="Mónica Cordero Sancho">
+
+        <!-- +++++++ -->
+        
+        <meta name="description" content="Calcule antes de visitar al prestamoista">
+        <meta property="og:site_name" content="Reportaje final de Craft 2 en Español"/>
+        <meta property="og:title" content="¿Cuánto resiste su bolsillo?">
+        <meta property="og:longTitle" content="¿Cuánto resiste su bolsillo">
+        <meta property="og:image" content="Incluir link a imagen principal de la historia "/>
+        <meta property="og:description" content="Las personas de bajos ingresos y con papeles migratorios irregulares se ven obligados a tocar las puertas de banqueros de barrio que cobran intereses que pueden superar el 3% semanal, el equivalente a un mínimo del 156% anual."/>
+        <meta property="og:url" content="AGREGAR LA URL DE LA PÁGINA"/>
+        <meta property="og:type" content="article"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="https://twitter.com/cunyjschool"/>
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">  
+       
+
     </head>
     
     <body>
         
     <script src="js/script.js"></script>
+
+    <!--  sección de la entrada -->  
+
+    <section>
+
+    <h1><a href="">¿Cuánto resiste su bolsillo?</a></h1>
+        
+    </section>
+
+    <section>
+
+    </section>
     
+    <section class="bajada">
+
+    <p>Las personas de bajos ingresos y con papeles migratorios irregulares se ven obligados a tocar las puertas de banqueros de barrio que cobran intereses que pueden superar el 3% semanal, el equivalente a un mínimo del 156% anual.</p>
+
+    <p>Descubra cuánto llegaría usted a pagar si se viera obligado a acudir a un prestamista por dinero necesita con nuestra calculadora.</p>
+
+    </section>
+    
+    <!--  elemento para la entrada de datos -->  
+    
+    <section class="cuerpo">
+
     <div> 
 
-    <!--  elemento para la entrada de datos -->
-   
-   	<label for="montodeprestamo" class = "box" >Monto de préstamo</label><input id="montodeprestamo"></input>
-    <label for="tasainteres" class = "box" >Tasa de interés</label><input id="tasainteres"></input>
-    <label for="cuotacapital" class = "box" >Pago semanal a la deuda</label><input id="cuotacapital"></input>
-    <label for="plazopago" class = "box" >Plazo de pago</label><input id="plazopago"></input>
+        <p>Ingrese cuánto necesita</p>
+
+       	<label for="montodeprestamo" class = "box" >Monto de préstamo</label><input id="montodeprestamo"></input>
+
+        <p>Ingrese un monto de interés superior al 3% semanal</p>
+        
+        <label for="tasainteres" class = "box" >Tasa de interés</label><input id="tasainteres"></input>
+
+        <p>Ingrese el número de semanas en las que cree poder pagar</p>
+
+        <label for="plazopago" class = "box">Plazo de pago</label><input id="plazopago"></input>
 
    	<!--  boton que dispara la accion -->
 
-    <button onclick="calculomontopresta()">Calcular deuda</button>
-    </div>
-	
-    <div>
-     <input id="resultado"></input>
+        <button onclick="calculomontopresta()">Calcular deuda</button>
+
 
     </div>
+	
+    <!--  Aquí el resultado -->
+    <div>
+
+        <p>Este el monto que llegará a pagar</p>
+        <input id="resultado"></input>
+
+    </div>
+
+    </section>
+
     </body>
 
 </html>
