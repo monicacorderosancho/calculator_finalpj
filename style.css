@@ -1,19 +1,21 @@
-.titulo {
 
+div#content{
+	margin: auto;
+	width: 400px;
 }
 
-.bajada {
-
+label, input{
+	display:block;
+	width: 100%;
 }
 
-.cuerpo 
-
+#bottom-button
 {
-
-
+	margin-top: 10px;
 }
 
-.box {
+span#resultado {
+    font-size: 33px;
+    font-weight: bold;
 
-	
 }
