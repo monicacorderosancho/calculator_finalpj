@@ -1,99 +1,63 @@
 <!doctype html>
-
 <html>
-    
-    <!--  Buenas pràcticas. OJO QUE FALTAN CAMPOS POR RELLENAR -->  
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!--  título y byline -->
-
-        <title class="titulo">¿Cuánto resiste su bolsillo?</title>
-        <meta name="author" content="Mónica Cordero Sancho">
-
-        <!-- +++++++ -->
-        
-        <meta name="description" content="Calcule antes de visitar al prestamoista">
-        <meta property="og:site_name" content="Reportaje final de Craft 2 en Español"/>
-        <meta property="og:title" content="¿Cuánto resiste su bolsillo?">
-        <meta property="og:longTitle" content="¿Cuánto resiste su bolsillo">
-        <meta property="og:image" content="Incluir link a imagen principal de la historia "/>
-        <meta property="og:description" content="Las personas de bajos ingresos y con papeles migratorios irregulares se ven obligados a tocar las puertas de banqueros de barrio que cobran intereses que pueden superar el 3% semanal, el equivalente a un mínimo del 156% anual."/>
-        <meta property="og:url" content="AGREGAR LA URL DE LA PÁGINA"/>
-        <meta property="og:type" content="article"/>
-        <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="https://twitter.com/cunyjschool"/>
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">  
-       
-
-    </head>
-    
-    <body>
-        
+    <!--  Buenas pràcticas. OJO QUE FALTAN CAMPOS POR RELLENAR -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title class="titulo">¿Cuánto resiste su bolsillo?</title>
+  <meta name="author" content="Mónica Cordero Sancho">
+  <meta name="description" content="Calcule antes de visitar al prestamoista">
+  <meta property="og:site_name" content="Reportaje final de Craft 2 en Español"/>
+  <meta property="og:title" content="¿Cuánto resiste su bolsillo?">
+  <meta property="og:longTitle" content="¿Cuánto resiste su bolsillo">
+  <meta property="og:image" content="Incluir link a imagen principal de la historia "/>
+  <meta property="og:description" content="Las personas de bajos ingresos y con papeles migratorios irregulares se ven obligados a tocar las puertas de banqueros de barrio que cobran intereses que pueden superar el 3% semanal, el equivalente a un mínimo del 156% anual."/>
+  <meta property="og:url" content="AGREGAR LA URL DE LA PÁGINA"/>
+  <meta property="og:type" content="article"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="https://twitter.com/cunyjschool"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+ <body>
     <script src="js/script.js"></script>
-
-    <!--  sección de la entrada -->  
-
+    <!--  sección de la entrada -->
+    <div id='content'>
     <section>
-
-    <h1 class="titulo">How much can your wallet take?</h1>
-        
+      <h1 class="titulo">How much can your wallet take?</h1>
     </section>
-
-    <section>
-
-    </section>
-    
     <section class="bajada">
-
-    <p>Low income non-resident aliens must face steep loan conditions from local loan sharks by local loan sharks with figures that go over 3% weekly interest rate, which amounts to a %156 yearly interest rate. .</p>
-
-    <p>Descubra cuánto llegaría usted a pagar si se viera obligado a acudir a un prestamista por dinero necesita con nuestra calculadora.</p>
-
+      <p>Low income non-resident aliens must face steep loan conditions from local loan sharks by local loan sharks with figures that go over 3% weekly interest rate, which amounts to a %156 yearly interest rate. .</p>
+      <p>Descubra cuánto llegaría usted a pagar si se viera obligado a acudir a un prestamista por dinero necesita con nuestra calculadora.</p>
     </section>
-    
-    <!--  elemento para la entrada de datos -->  
-    
+    <!--  elemento para la entrada de datos -->
     <section class="cuerpo">
-
-    <div> 
-
-        <p>Type how much money you need</p>
-
-       	<label for="montodeprestamo" class = "box" >Monto de préstamo</label><input id="montodeprestamo"></input>
-
-        <p>Enter your weekly interest rate (3% or above</p>
-        
-        
-        <label for="tasainteres" class = "box" >Tasa de interés</label><input id="tasainteres"></input>
-
-        
-
-        <p>Enter the number of weeks you need to pay the loan</p>
-
-        <label for="plazopago" class = "box">Plazo de pago</label><input id="plazopago"></input>
-
-   	<!--  boton que dispara la accion -->
-
-        <button onclick="calculomontopresta()">Calculate</button>
-
-
-    </div>
-	
-    <!--  Aquí el resultado -->
-    <div>
-
-        <p>Amount owed</p>
-        <input id="resultado"></input>
-
-    </div>
-
+      <div>
+          <p>Type how much money you need</p>
+          <div class="form-input">
+           	<label for="montodeprestamo" class = "box" >Monto de préstamo</label><input id="montodeprestamo"></input>
+          </div>
+          <p>Enter your weekly interest rate (3% or above</p>
+          <div class="form-input">
+            <label for="tasainteres" class = "box" >Tasa de interés</label><input id="tasainteres"></input>
+          </div>
+          <p>Enter the number of weeks you need to pay the loan</p>
+          <div class="form-input">
+            <label for="plazopago" class = "box">Plazo de pago</label><input id="plazopago"></input>
+          </div>
+     	<!--  boton que dispara la accion -->
+          <div id="bottom-button">
+            <button onclick="calculomontopresta()">Calculate</button>
+          </div>
+      </div>
+      <!--  Aquí el resultado -->
+      <div>
+          <p>Amount owed</p>
+          <span id="resultado"></span>
+      </div>
     </section>
-
-    </body>
-
+  </div>
+ </body>
 </html>
