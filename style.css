@@ -1,49 +1,57 @@
-<<<<<<< Updated upstream
-=======
-
-
 .titulo {
-font-family: georgia,times,serif;
-font-size: 2em;
-text-align: center;
-
->>>>>>> Stashed changes
+	font-family: georgia,times,serif;
+	font-size: 2em;
+	text-align: center;
+}
 
 div#content{
 	margin: auto;
+	margin-top:20px;
 	width: 400px;
+	background-color: lightblue;
+	padding:10px;
 }
 
-<<<<<<< Updated upstream
+
 label, input{
 	display:block;
 	width: 100%;
-=======
-.bajada {
+}
 
-background-color: yellow;
->>>>>>> Stashed changes
+.bajada {
+	background-color: yellow;
 }
 
 #bottom-button
 {
-<<<<<<< Updated upstream
 	margin-top: 10px;
 }
 
 span#resultado {
     font-size: 33px;
     font-weight: bold;
-
-}
-=======
-
-background-color: lightblue;
-
-
 }
 
-
-.box { display: inline-block; width: 50px; text-align: right; background-color: green;
+.box { 
+	display: inline-block; 
+	width: 100%;
+	text-align: left; 
  }
->>>>>>> Stashed changes
+.form-input
+{
+	margin-bottom:5px;
+	font-size:16px;
+}
+.form-input input 
+{
+	font-size:30px;
+	text-align:right;
+	width:50%;
+}
+ #resultado
+ {	
+	display:block;
+	height:30px;
+	 font-weight:bold;
+	 font-size:15px;
+ }
