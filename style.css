@@ -1,16 +1,33 @@
+<<<<<<< Updated upstream
+=======
+
+
+.titulo {
+font-family: georgia,times,serif;
+font-size: 2em;
+text-align: center;
+
+>>>>>>> Stashed changes
 
 div#content{
 	margin: auto;
 	width: 400px;
 }
 
+<<<<<<< Updated upstream
 label, input{
 	display:block;
 	width: 100%;
+=======
+.bajada {
+
+background-color: yellow;
+>>>>>>> Stashed changes
 }
 
 #bottom-button
 {
+<<<<<<< Updated upstream
 	margin-top: 10px;
 }
 
@@ -19,3 +36,14 @@ span#resultado {
     font-weight: bold;
 
 }
+=======
+
+background-color: lightblue;
+
+
+}
+
+
+.box { display: inline-block; width: 50px; text-align: right; background-color: green;
+ }
+>>>>>>> Stashed changes
